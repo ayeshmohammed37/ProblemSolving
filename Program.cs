@@ -1,7 +1,5 @@
 ﻿using Codewars;
 
-string str = "1";
+string input = "aA11";
 
-var ans = Kata.Maskify(str);
-
-Console.WriteLine(ans);
+Console.WriteLine(Kata.DuplicateCount(input));
