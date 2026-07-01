@@ -1,6 +1,6 @@
 namespace Codewars;
 
-public class DnaStrand
+public partial class Solution
 {
     public static string MakeComplement(string dna)
     {

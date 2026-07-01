@@ -1,6 +1,6 @@
 namespace Codewars;
 
-public partial class Kata
+public partial class Solution
 {
     // return masked string
     public static string Maskify(string cc)

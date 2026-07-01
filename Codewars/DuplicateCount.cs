@@ -1,6 +1,6 @@
 namespace Codewars;
 
-public partial class Kata
+public partial class Solution
 {
   public static int DuplicateCount(string str)
   {
