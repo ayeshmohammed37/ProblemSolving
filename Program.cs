@@ -1,5 +1,5 @@
 ﻿using Codewars;
 
-string input = "aA11";
+string input = "GTAT";
 
-Console.WriteLine(Kata.DuplicateCount(input));
+Console.WriteLine(DnaStrand.MakeComplement(input));
