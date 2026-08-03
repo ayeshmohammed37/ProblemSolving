@@ -1,3 +1,5 @@
+namespace LeetCode;
+
 public partial class Solution {
     public bool ContainsDuplicate(int[] nums) {
         Dictionary<int, bool> dict = new Dictionary<int, bool>();
