@@ -7,13 +7,16 @@ public partial class Solution
         if (s.Length != t.Length)
             return false;
         
-        // Sorting
-        char[] sArr = s.ToCharArray();
-        char[] tArr = t.ToCharArray();
+        // Hash Map
+        Dictionary<char, int> sCount = new Dictionary<char, int>();
+        Dictionary<char, int> tCount = new Dictionary<char, int>();
 
-        Array.Sort(sArr);
-        Array.Sort(tArr);
+        for (int i = 0; i < s.Length; i++)
+        {
+            sCount[s[i]] = sCount.ContainsKey(s[i]) ? sCount[s[i]] + 1 : 1;
+            tCount[t[i]] = tCount.ContainsKey(t[i]) ? sCount[t[i]] + 1 : 1;
+        }
 
-        return sArr.SequenceEqual(tArr);
+        return sCount.Count == tCount.Count && !sCount.Except(tCount).Any();
     }
 }
